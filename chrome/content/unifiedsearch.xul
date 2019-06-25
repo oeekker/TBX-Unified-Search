@@ -8,23 +8,11 @@
 >
 <overlay id="unifiedsearch-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-		 xmlns:html="http://www.w3.org/1999/xhtml">
+                 xmlns:html="http://www.w3.org/1999/xhtml">
     <script type="application/javascript" src="chrome://unifiedsearch/content/unifiedsearch.js" />
     <keyset>
-        <key id="unifiedsearch-widget-boxfocus" modifiers="accel shift" key="K" oncommand="unifiedsearch.cmd_uswboxFocus(event);"/>		  
+        <key id="unifiedsearch-widget-boxfocus" modifiers="accel shift" key="K" oncommand="unifiedsearch.cmd_uswboxFocus(event);"/>
     </keyset>
-    <box style="display:none">
-        <label id="unifiedsearch-filter-sender-shortcut" value="&unifiedsearch.widget.filter.sender.shortcut;"/>
-        <label id="unifiedsearch-filter-recipients-shortcut" value="&unifiedsearch.widget.filter.recipients.shortcut;"/>
-        <label id="unifiedsearch-filter-subject-shortcut" value="&unifiedsearch.widget.filter.subject.shortcut;"/>
-        <label id="unifiedsearch-filter-body-shortcut" value="&unifiedsearch.widget.filter.body.shortcut;"/>
-        <label id="unifiedsearch-filter-unread-shortcut" value="&unifiedsearch.widget.filter.unread.shortcut;"/>
-        <label id="unifiedsearch-filter-starred-shortcut" value="&unifiedsearch.widget.filter.starred.shortcut;"/>
-        <label id="unifiedsearch-filter-inaddrbook-shortcut" value="&unifiedsearch.widget.filter.inaddrbook.shortcut;"/>
-        <label id="unifiedsearch-filter-tags-shortcut" value="&unifiedsearch.widget.filter.tags.shortcut;"/>
-        <label id="unifiedsearch-filter-attachment-shortcut" value="&unifiedsearch.widget.filter.attachment.shortcut;"/>
-        <label id="unifiedsearch-filter-sticky-shortcut" value="&unifiedsearch.widget.filter.sticky.shortcut;"/>
-    </box>
     <toolbarpalette id="MailToolbarPalette">
         <toolbaritem id="unifiedsearch-widget" class="chromeclass-toolbar-additional" align="center"
                      title="&unifiedsearch.customize_title;"
@@ -128,10 +116,13 @@
                 placeholder=""
                 emptytextbase="&unifiedsearch.uswbox_emptytext;"
                 keyLabelNonMac="&unifiedsearch.keyLabel.nonmac;"
-                keyLabelMac="&unifiedsearch.keyLabel.mac;">
+                keyLabelMac="&unifiedsearch.keyLabel.mac;"
+                sizetopopup="pref"
+                tabscrolling="true"
+                style="visibility: visible;">
                 <hbox class="textbox-input-box" id="unifiedsearch-widget-box-buttons">
                     <toolbarbutton
-                        id="unifiedsearch-widget-sticky" crop="none" minwidth="16"
+                        id="unifiedsearch-widget-sticky" crop="none" width="16"
                         onmouseover="unifiedsearch.onMouseTooltip(event)"
                         tooltip="unifiedsearch-sharedtooltip"
                         type="checkbox" accesskey="&unifiedsearch.widget.filter.sticky.shortcut;"
@@ -145,7 +136,7 @@
                         tooltiptext="&unifiedsearch.switchmode;"
                         command="unifiedsearch-cmd_switchUSWidgetMode" />
                     <toolbarbutton
-                        id="unifiedsearch-widget-criteria" crop="none" minwidth="16" popup="unifiedsearch-widget-menu"
+                        id="unifiedsearch-widget-criteria" crop="none" width="16" popup="unifiedsearch-widget-menu"
                         tooltiptext="&unifiedsearch.usw_criteria;" />
                 </hbox>
             </textbox>

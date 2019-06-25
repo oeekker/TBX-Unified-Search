@@ -1,7 +1,10 @@
 /**
-    Some utils from MDN tutorials, snippets,
-    adapted for a module.
-**/
+ * Some utils from MDN tutorials, snippets,
+ * adapted for a module.
+ */
+
+"use strict";
+
 var EXPORTED_SYMBOLS = ["MdnUtils"];
 
 function MdnUtils(window, document) {
@@ -33,14 +36,15 @@ function MdnUtils(window, document) {
             toolbar.setAttribute("currentset", toolbar.currentSet);
             document.persist(toolbar.id, "currentset");
 
-            if (toolbarId == "addon-bar")
+            if (toolbarId == "addon-bar") {
                 toolbar.collapsed = false;
+            }
         }
     }
     
     /**
-        API
-    **/
+     * API
+     */
     return {
         installButton: installButton
     };

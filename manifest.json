@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{FAD2EADC-7D70-11DF-8B33-89D1DED72085}",
+      "strict_min_version": "68.0b1"
+    }
+  },
+  "name": "Unified Search",
+  "description": "Unify the global search box and quick filter box, and enhance it!",
+  "author": "Iago Lorenzo Salgueiro (IagoSRL@gmail.com)",
+  "version": "0.7.9",
+  "legacy": {
+    "type": "xul",
+    "options": {
+      "page": "chrome://unifiedsearch/content/options.xul",
+      "open_in_tab": false
+    }
+  },
+  "homepage_url": "https://github.com/IagoSRL/TBX-Unified-Search",
+  "icons": {
+    "32": "icon.png"
+  }
+}

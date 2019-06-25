@@ -5,15 +5,15 @@
 <!ENTITY globalSearchBox.title "Opties Globaal zoeken veld">
 
 <!ENTITY searchShortcuts.label "Start Globaal zoeken in het Snelfilterveld met de sneltoetsen:">
-<!ENTITY searchShortcut.altEnter "Alt + Enter">
-<!ENTITY searchShortcut.ctrlEnter "Control + Enter">
+<!ENTITY searchShortcut.altEnter "Alt+Enter">
+<!ENTITY searchShortcut.ctrlEnter "Control+Enter">
 <!ENTITY searchShortcut.enter "Enter">
 
 <!ENTITY autoComplete.enableTabScrolling "'Tab scrollen' inschakelen (doorloop de automatische aanvulsuggesties door op de &lt;Tab&gt; toets te drukken)">
 <!ENTITY autoComplete "Automatische aanvulsuggesties" >
 <!ENTITY switchAutoComplete "In- en uitschakelen van automatische aanvulsuggesties toestaan met de sneltoets: ">
-<!ENTITY autoCompleteShortcut.altA "Alt + A ('niet meer ondersteund': deze mogelijkheid zal verwijderd worden, omdat hij in sommige talen problemen veroorzaakt met sneltoetsen in het menu)">
-<!ENTITY autoCompleteShortcut.ctrlA "Control + A">
+<!ENTITY autoCompleteShortcut.altA "Alt+A ('niet meer ondersteund': deze mogelijkheid zal verwijderd worden, omdat hij in sommige talen problemen veroorzaakt met sneltoetsen in het menu)">
+<!ENTITY autoCompleteShortcut.ctrlA "Control+A">
 <!ENTITY autoComplete.enableInSearchBox "Automatische aanvulsuggesties in het Globale zoeken veld inschakelen">
 <!ENTITY autoComplete.enableInFilterBox "Automatische aanvulsuggesties in het Snelfilterveld inschakelen">
 <!ENTITY enableSearchTransfer.label "Kopieer de tekst van het zoekveld naar het filterveld als u op Ctrl+F drukt (en pas het filter toe)">

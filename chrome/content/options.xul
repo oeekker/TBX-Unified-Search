@@ -1,65 +1,67 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet type="text/css" href="chrome://messenger/skin/preferences/preferences.css"?>
+<?xml-stylesheet type="text/css" href="chrome://communicator/skin/"?>
 <?xml-stylesheet href="chrome://unifiedsearch/skin/options.css" type="text/css"?>
-<!DOCTYPE prefwindow SYSTEM "chrome://unifiedsearch/locale/options.dtd">
+<!DOCTYPE window SYSTEM "chrome://unifiedsearch/locale/options.dtd">
 <prefwindow id="unifiedsearch-preferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&prefwindow.title;">
-  
-  <prefpane id="pane1" label="&pane1.title;">
-    <preferences>
-	  <preference id="searchAltEnter" name="extensions.unifiedsearch.searchShortcut.altEnter" type="bool"/>
-	  <preference id="searchCtrlEnter" name="extensions.unifiedsearch.searchShortcut.ctrlEnter" type="bool"/>
-	  <preference id="searchEnter" name="extensions.unifiedsearch.searchShortcut.enter" type="bool"/>
-	  <preference id="tabScrolling" name="extensions.unifiedsearch.autoComplete.enableTabScrolling" type="bool"/>
-	  <preference id="autoCompleteShortcutAltA" name="extensions.unifiedsearch.autoCompleteShortcut.altA" type="bool"/>
-	  <preference id="autoCompleteShortcutCtrlA" name="extensions.unifiedsearch.autoCompleteShortcut.ctrlA" type="bool"/>
-	  <preference id="enableAutoCompleteInSearchBox" name="extensions.unifiedsearch.autoComplete.enableInSearchBox" type="bool"/>
-	  <preference id="enableAutoCompleteInFilterBox" name="extensions.unifiedsearch.autoComplete.enableInFilterBox" type="bool"/>
-	  <preference id="enableFilterTransfer" name="extensions.unifiedsearch.enableFilterTransfer" type="bool"/>
-	  <preference id="enableSearchTransfer" name="extensions.unifiedsearch.enableSearchTransfer" type="bool"/>
-	  <preference id="enableFilteringInSearchBox" name="extensions.unifiedsearch.searchBox.enableFiltering" type="bool"/>
-	  <preference id="incompatibleFilteringAndAutoComplete" name="extensions.unifiedsearch.searchBox.incompatibleFilteringAndAutoComplete" type="bool"/>
-	  <preference id="hideFilterBox" name="extensions.unifiedsearch.filterBox.hide" type="bool"/>
-	  <preference id="hideFilterBar" name="extensions.unifiedsearch.filterBar.hide" type="bool"/>
-	  <preference id="hideSearchBox" name="extensions.unifiedsearch.searchBox.hide" type="bool"/>
-	  <preference id="autoShowFilterBar" name="extensions.unifiedsearch.filterBar.autoShow" type="bool"/>
-	  <preference id="rememberFilterOptions" name="extensions.unifiedsearch.filterBar.rememberFilterOptions" type="bool"/>
 
-    </preferences>
+    <prefpane id="pane1" label="&pane1.title;">
+        <preferences>
+            <preference id="searchAltEnter" name="extensions.unifiedsearch.searchShortcut.altEnter" type="bool"/>
+            <preference id="searchCtrlEnter" name="extensions.unifiedsearch.searchShortcut.ctrlEnter" type="bool"/>
+            <preference id="searchEnter" name="extensions.unifiedsearch.searchShortcut.enter" type="bool"/>
+            <preference id="tabScrolling" name="extensions.unifiedsearch.autoComplete.enableTabScrolling" type="bool"/>
+            <preference id="autoCompleteShortcutAltA" name="extensions.unifiedsearch.autoCompleteShortcut.altA" type="bool"/>
+            <preference id="autoCompleteShortcutCtrlA" name="extensions.unifiedsearch.autoCompleteShortcut.ctrlA" type="bool"/>
+            <preference id="enableAutoCompleteInSearchBox" name="extensions.unifiedsearch.autoComplete.enableInSearchBox" type="bool"/>
+            <preference id="enableAutoCompleteInFilterBox" name="extensions.unifiedsearch.autoComplete.enableInFilterBox" type="bool"/>
+            <preference id="enableFilterTransfer" name="extensions.unifiedsearch.enableFilterTransfer" type="bool"/>
+            <preference id="enableSearchTransfer" name="extensions.unifiedsearch.enableSearchTransfer" type="bool"/>
+            <preference id="enableFilteringInSearchBox" name="extensions.unifiedsearch.searchBox.enableFiltering" type="bool"/>
+            <preference id="incompatibleFilteringAndAutoComplete" name="extensions.unifiedsearch.searchBox.incompatibleFilteringAndAutoComplete" type="bool"/>
+            <preference id="hideFilterBox" name="extensions.unifiedsearch.filterBox.hide" type="bool"/>
+            <preference id="hideFilterBar" name="extensions.unifiedsearch.filterBar.hide" type="bool"/>
+            <preference id="hideSearchBox" name="extensions.unifiedsearch.searchBox.hide" type="bool"/>
+            <preference id="autoShowFilterBar" name="extensions.unifiedsearch.filterBar.autoShow" type="bool"/>
+            <preference id="rememberFilterOptions" name="extensions.unifiedsearch.filterBar.rememberFilterOptions" type="bool"/>
+
+        </preferences>
 
 	<tabbox id="prefs-box" flex="1" align="stretch">
-		<tabs>
-			<tab label="&quickFilterbox.title;"/>
-			<tab label="&globalSearchBox.title;"/>
-			<tab label="&autoComplete;"/>
-		</tabs>
-		<tabpanels>
-			<tabpanel orient="vertical">
-				<checkbox id="hideFilterBar" preference="hideFilterBar" label="&hideFilterBar.label;"/>
-				<checkbox id="hideFilterBox" preference="hideFilterBox" label="&hideFilterBox.label;"/>
-				<checkbox id="enableFilterTransfer" preference="enableFilterTransfer" label="&enableFilterTransfer.label;"/>
-				<label>&searchShortcuts.label;</label>
-				<checkbox id="searchAltEnter" preference="searchAltEnter" label="&searchShortcut.altEnter;"/>
-				<checkbox id="searchCtrlEnter" preference="searchCtrlEnter" label="&searchShortcut.ctrlEnter;"/>
-				<checkbox id="searchEnter" preference="searchEnter" label="&searchShortcut.enter;"/>
-				<checkbox id="rememberFilterOptions" preference="rememberFilterOptions" label="&rememberFilterOptions.label;"/>
-			</tabpanel>
-			<tabpanel orient="vertical">
-				<checkbox id="hideSearchBox" preference="hideSearchBox" label="&hideSearchBox.label;"/>
-				<checkbox id="enableSearchTransfer" preference="enableSearchTransfer" label="&enableSearchTransfer.label;"/>
-				<checkbox id="tabScrolling" preference="tabScrolling" label="&autoComplete.enableTabScrolling;"/>
-				<checkbox id="enableFilteringInSearchBox" preference="enableFilteringInSearchBox" label="&enableFilteringInSearchBox.label;"/>
-				<checkbox id="incompatibleFilteringAndAutoComplete" preference="incompatibleFilteringAndAutoComplete" label="&incompatibleFilteringAndAutoComplete.label;"/>
-				<checkbox id="autoShowFilterBar" preference="autoShowFilterBar" label="&autoShowFilterBar.label;"/>
-			</tabpanel>
-			<tabpanel orient="vertical">
-				<checkbox id="enableAutoCompleteInSearchBox" preference="enableAutoCompleteInSearchBox" label="&autoComplete.enableInSearchBox;"/>
-				<!--<checkbox id="enableAutoCompleteInFilterBox" preference="enableAutoCompleteInFilterBox" label="&autoComplete.enableInFilterBox;"/>-->
-				<label>&switchAutoComplete;</label>
-				<checkbox id="autoCompleteShortcutAltA" preference="autoCompleteShortcutAltA" label="&autoCompleteShortcut.altA;"/>
-				<checkbox id="autoCompleteShortcutCtrlA" preference="autoCompleteShortcutCtrlA" label="&autoCompleteShortcut.ctrlA;"/>
-			</tabpanel>
-		</tabpanels>
-	</tabbox>
+            <tabs>
+                <tab label="&quickFilterbox.title;"/>
+                <tab label="&globalSearchBox.title;"/>
+                <tab label="&autoComplete;"/>
+            </tabs>
+            <tabpanels>
+                <tabpanel orient="vertical">
+                    <checkbox id="hideFilterBar" preference="hideFilterBar" label="&hideFilterBar.label;"/>
+                    <checkbox id="hideFilterBox" preference="hideFilterBox" label="&hideFilterBox.label;"/>
+                    <checkbox id="enableFilterTransfer" preference="enableFilterTransfer" label="&enableFilterTransfer.label;"/>
+                    <label>&searchShortcuts.label;</label>
+                    <checkbox id="searchAltEnter" preference="searchAltEnter" label="&searchShortcut.altEnter;"/>
+                    <checkbox id="searchCtrlEnter" preference="searchCtrlEnter" label="&searchShortcut.ctrlEnter;"/>
+                    <checkbox id="searchEnter" preference="searchEnter" label="&searchShortcut.enter;"/>
+                    <checkbox id="rememberFilterOptions" preference="rememberFilterOptions" label="&rememberFilterOptions.label;"/>
+                </tabpanel>
+                <tabpanel orient="vertical">
+                    <checkbox id="hideSearchBox" preference="hideSearchBox" label="&hideSearchBox.label;"/>
+                    <checkbox id="enableSearchTransfer" preference="enableSearchTransfer" label="&enableSearchTransfer.label;"/>
+                    <checkbox id="tabScrolling" preference="tabScrolling" label="&autoComplete.enableTabScrolling;"/>
+                    <checkbox id="enableFilteringInSearchBox" preference="enableFilteringInSearchBox" label="&enableFilteringInSearchBox.label;"/>
+                    <checkbox id="incompatibleFilteringAndAutoComplete" preference="incompatibleFilteringAndAutoComplete" label="&incompatibleFilteringAndAutoComplete.label;"/>
+                    <checkbox id="autoShowFilterBar" preference="autoShowFilterBar" label="&autoShowFilterBar.label;"/>
+                </tabpanel>
+                <tabpanel orient="vertical">
+                    <checkbox id="enableAutoCompleteInSearchBox" preference="enableAutoCompleteInSearchBox" label="&autoComplete.enableInSearchBox;"/>
+                    <!--<checkbox id="enableAutoCompleteInFilterBox" preference="enableAutoCompleteInFilterBox" label="&autoComplete.enableInFilterBox;"/>-->
+                    <label>&switchAutoComplete;</label>
+                    <checkbox id="autoCompleteShortcutAltA" preference="autoCompleteShortcutAltA" label="&autoCompleteShortcut.altA;"/>
+                    <checkbox id="autoCompleteShortcutCtrlA" preference="autoCompleteShortcutCtrlA" label="&autoCompleteShortcut.ctrlA;"/>
+                </tabpanel>
+            </tabpanels>
+        </tabbox>
 
-  </prefpane>
+    </prefpane>
 </prefwindow>
